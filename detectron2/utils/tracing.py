@@ -4,7 +4,7 @@ import torch
 from detectron2.utils.env import TORCH_VERSION
 
 try:
-    from torch.fx._symbolic_trace import is_fx_tracing as is_fx_tracing_current
+    from torch.fx._symbolic_trace import is_fx_tracing_symbolic_tracing as is_fx_tracing_current
 
     tracing_current_exists = True
 except ImportError:
